@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="surveyStyle.css">
+	<title>Programming Survey and IT</title>
+	</head>
+	<body>
+		<form method="post" id="survey-form" action="successForm.html">
+		<fieldset id="programmingSurveyID">
+		<h1>Welcome to the Programming and IT survey!</h1>
+		<label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
+		<label for="age">Input your age (years): <input id="age" type="number" name="age" min=5 max=120/></label>
+		<h4>Do you want to be a coder?</h4>
+		<label for="personal-account"><input id="personal-account" class="inline" type="radio" name="account-type" checked /> Yes!</label>
+        <label for="business-account"><input id="business-account" class="inline" type="radio" name="account-type" /> No...</label>
+		<h4>If you want to be a coder, please explain what drives you: </h4>
+		<textarea id="explanation" name="bio"rows="6" cols="60" placeholder="I want to be a coder because..."></textarea></label>
+		<h4>How did you first got in contact with Programming?</h4>
+		<select class="select" id="referrer" name="referrer">
+			<option value="">(select one)</option>
+			<option value="1">freeCodeCamp</option>
+			<option value="2">YouTube Tutorials</option>
+			<option value="3">Parents/Friends</option>
+			<option value="4">Other</option>
+		</select>
+		</fieldset>
+		<input type="submit" value="Submit" />
+	</body>
+</html>
